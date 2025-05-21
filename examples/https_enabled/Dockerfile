@@ -1,5 +1,5 @@
 # Base
-FROM node:alpine AS base
+FROM node:23.11.1-alpine3.21 AS base
 ENV HOME=/home/node
 WORKDIR $HOME/app
 RUN chown -R node:node $HOME/*
